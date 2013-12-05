@@ -25,35 +25,35 @@ for (var i = 0; i < json_obj.length; i++) {
 }
 
 console.log('----> block');
-var block = []
+var block = [];
 for (var i = 0; i < json_obj.length; i++) {
   block.push(json_obj.charCodeAt(i).toString(2));
 }
 console.log(block);
 
 console.log('----> string');
-var str = ''
+var str = '';
 for (var i = 0; i < json_obj.length; i++) {
   str += json_obj.charCodeAt(i).toString(2);
 }
 console.log(str);
 
 console.log('----> hex block');
-var block = []
+var block = [];
 for (var i = 0; i < json_obj.length; i++) {
   block.push(json_obj.charCodeAt(i).toString(16));
 }
 console.log(block);
 
 console.log('----> decimal block');
-var block = []
+var block = [];
 for (var i = 0; i < json_obj.length; i++) {
   block.push(json_obj.charCodeAt(i).toString(10));
 }
 console.log(block);
 
 console.log('----> decimal codes');
-var block = []
+var block = [];
 for (var i = 0; i < json_obj.length; i++) {
   block.push(json_obj.charCodeAt(i));
 }
