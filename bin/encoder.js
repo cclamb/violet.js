@@ -3,7 +3,7 @@
 var __ 			= require('underscore'),
 	btoa		= require('btoa'),
 	atob		= require('atob'),
-	values 		= [0, 1, 128, 254, 255],
+	values 		= [0, 1, 2, 234, 167, 253, 254, 255],
 	buffer 		= new ArrayBuffer(values.length),
 	uint8array 	= new Uint8Array(buffer),
 	encoding	= 'utf-8';
