@@ -36,4 +36,13 @@ describe('A DES key', function() {
 		var key = new Key(testB64String);
 		expect(key).not.toBe(undefined);
 	});
+
+	it('should return a copy of the binary array', function() {
+		var key 	= new Key(testB64String),
+			array 	= key.array();
+		expect(array.length).toEqual(testKey.length);
+		__.each(testKey, function(e, i) {
+			expect(e).toEqual(array[i]);
+		});
+	});
 });
