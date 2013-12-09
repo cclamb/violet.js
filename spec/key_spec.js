@@ -45,4 +45,8 @@ describe('A DES key', function() {
 			expect(e).toEqual(array[i]);
 		});
 	});
+
+	it('should support an extractor to get bits', function() {
+		expect(true).toBe(false);
+	});
 });
