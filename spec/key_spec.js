@@ -46,6 +46,12 @@ describe('A DES key', function() {
 		});
 	});
 
+	it('should support toString', function() {
+		var key 	= new Key(testB64String),
+			string 	= key.toString();
+		expect(string).toEqual(testB64String);
+	});
+
 	it('should support an extractor to get bits', function() {
 		expect(true).toBe(false);
 	});
