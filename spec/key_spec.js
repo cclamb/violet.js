@@ -53,6 +53,12 @@ describe('A DES key', function() {
 	});
 
 	it('should support an extractor to get bits', function() {
-		expect(true).toBe(false);
+		var key 	= new Key(testB64String);
+			store 	= key.extractBits(function(s) {
+							debugger;
+							__.each(testKey, function(e,i) { expect(e).toEqual(s[i]); });
+							return s;
+						});
+		__.each(testKey, function(e,i) { expect(e).toEqual(store[i]); });;
 	});
 });
